@@ -1,39 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+{% extends 'mainapp/base.html' %}
+{% block title %}
     <title>Каталог</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
-</head>
-
-<body>
-    <div class="header">
-        <p class="logo">
-            <img src="static/img/logo.jpg" alt="лого" width="200">
-        </p>
-        <ul class="menu">
-            <li><a href="index.html">Главная страница</a></li>
-            <li><a href="contacts.html">Контакты </a></li>
-        </ul>
-    </div>
-
-
-    <hr>
+{% endblock %}
+{% block content %}
     <h1>Каталог</h1>
     <div class="first_place">
-        <span class="tov_fot">
-            <img src="img/c50.JPG" width="200" alt="c50">
-        </span>
         <span class="tov_link">
-            <a href="catalog/C50.html">C50</a><br>
+            <p><a href="{% url 'C50' %}"> <img src="./../../static/mainapp/img/products/c50.JPG" width="200" alt="c50" </a></p><br>
         </span>
     </div>
-    <div class="footer">
-        <hr>
-        <p class="rights">Все права защищены &copy; 2019</p>
-    </div>
-
-</body>
-
-</html>
+{% endblock %}

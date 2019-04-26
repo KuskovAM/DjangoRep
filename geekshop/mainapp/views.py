@@ -1,17 +1,14 @@
 from django.shortcuts import render
 
 # Create your views here.
-def main(request):
-    return render(request, 'mainapp/index.html')
+def main(requset):
+    return render(requset, 'mainapp/index.html')
 
+def catalog(requset):
+    return render(requset, 'mainapp/catalog.html')
 
-def catalog(request):
-    return render(request, 'mainapp/catalog.html')
+def contacts(requset):
+    return render(requset, 'mainapp/contacts.html')
 
-
-def contacts(request):
-    return render(request, 'mainapp/contacts.html')
-
-
-def prodicts(request):
-    return render(request, 'mainapp/catalog/c50.html')
+def mapet(request):
+    return render(request,'mainapp/products/C50.html')

@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'mainapp/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
+{% block title %}
     <title>Контакты</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        input{
-            height: 30px;
-            font-style: italic;
-            font-size: 22px;
-        }
-    </style>
-</head>
+{% endblock %}
 
-<body>
-    <div class="header">
-        <p class="logo">
-            <img src="logo.jpg" alt="лого" width="200">
-        </p>
-        <ul class="menu">
-            <li><a href="index.html">Вернуться на главную</a></li>
-            <li><a href="catalog.html">Каталог </a></li>
-        </ul>
-    </div>
-
-
+{% block content %}
     <h1>Контакты</h1>
     <hr>
     <form class="form" action="">
@@ -49,12 +28,4 @@
             }
         </style>
     </div><br />
-
-    <div class="footer">
-        <hr>
-        <p class="rights">Все права защищены &copy; 2019</p>
-    </div>
-
-</body>
-
-</html>
+{% endblock %}
