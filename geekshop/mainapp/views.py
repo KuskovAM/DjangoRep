@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Product, ProductCategory
 
 # Create your views here.
 def main(requset):
@@ -12,3 +13,7 @@ def contacts(requset):
 
 def mapet(request):
     return render(request,'mainapp/products/C50.html')
+
+def products(request):
+    context = {'products': Product.objects.all()}
+    return render(request,'mainapp/products.html', context)

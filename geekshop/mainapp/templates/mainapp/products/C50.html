@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'mainapp/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
+{% block title %}
     <title>C50</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="./../../static/mainapp/css/style.css">
     <style>
         h3{
             color: black;
             font-size: 18px;
             font-weight: 400;
-            background-color: #eaeaea; 
-        }  
+            background-color: #eaeaea;
+        }
         p:first-letter{
             font-size: 30px;
             color: darkgoldenrod
         }
     </style>
+{% endblock %}
+
+{% block js %}
     <script type="text/javascript">
         function openImageWindow(src) {
             var image = new Image();
@@ -26,25 +30,13 @@
             window.open(src, "Image", "width=" + width + ",height=" + height);
         }
     </script>
-</head>
-
-<body>
-
-    <div class="header">
-        <p class="logo">
-            <img src="../logo.jpg" alt="лого" width="200">
-        </p>
-        <ul class="menu">
-            <li><a href="../index.html">Вернуться на главную</a></li>
-            <li><a href="../contacts.html">Контакты</a></li>
-            <li><a href="../catalog.html">Каталог </a></li>
-        </ul>
-    </div>
+{% endblock %}
+{% block content %}
     <hr>
     <h1> Suzuki Boulevard c50 </h1>
     <div class="opis">
            <h3 class="zdescr"> Описание товара</h3>
-        <img class="product_img" src="../img/c50.JPG" width="500" alt="c50" onclick="openImageWindow(this.src);">
+        <img class="product_img" src="./../../../static/mainapp/img/products/c50.JPG" width="500" alt="c50" onclick="openImageWindow(this.src);">
 
     <p class="cratop"> Модель круизера Suzuki VL800 Intruder (Volusia) появилась в 2001 году в качестве классической модификации Suzuki VS800 Intruder, выпускаясь параллельно с ней до 2004 года (на американском рынке параллельно с Boulevard S50, до 2009 года). Модель была доступна также на японском рынке под названием Suzuki Intruder 800 Classic, продаваясь там до 2006 года включительно. <br>
 
@@ -58,7 +50,7 @@
 
         На внутреннем японском рынке предлагалась также 400-кубовая модификация моделей Suzuki VL800 Volusia и Suzuki Intruder C50 - Suzuki VL400 Intruder Classic, которая в 2016 году была снята с производственной линейки.</p>
     </div>
-    
+
 
     <h3> Характеристи мотоцикла </h3>
     <table class="list">
@@ -159,11 +151,5 @@
         - накладки на рычаги переключения передач и педаль заднего тормоза - Kuryakyn <br>
         - Хромированные накладки на: решётку радиатора, рулевую колонку, крышки двигателя, раму, задний фонарь, тормозной бачок - Show Chrome и Suzuki Boulevard <br>
         - крышка воздушного фильтра в стиле – Live to Ride.</p>
-    <div class="footer">
-        <hr>
-        <div class="rights">Все права защищены &copy; 2019</div>
-    </div>
+{% endblock %}
 
-</body>
-
-</html>

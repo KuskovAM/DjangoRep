@@ -1,0 +1,13 @@
+{% extends 'mainapp/base.html' %}
+{% block title %}
+    <title>Продукты</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Продукты</h1>
+    {% for product in products  %}
+        <h3>{{ product.name }}</h3>
+        <img src={{ product.image.url }}  width="200">
+        <div>{{ product.short_desc }}</div>
+    {% endfor %}
+{% endblock %}
