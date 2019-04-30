@@ -1,0 +1,155 @@
+{% extends 'mainapp/base.html' %}
+
+{% block title %}
+    <title>C50</title>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="./../../static/mainapp/css/style.css">
+    <style>
+        h3{
+            color: black;
+            font-size: 18px;
+            font-weight: 400;
+            background-color: #eaeaea;
+        }
+        p:first-letter{
+            font-size: 30px;
+            color: darkgoldenrod
+        }
+    </style>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function openImageWindow(src) {
+            var image = new Image();
+            image.src = src;
+            var width = image.width;
+            var height = image.height;
+            window.open(src, "Image", "width=" + width + ",height=" + height);
+        }
+    </script>
+{% endblock %}
+{% block content %}
+    <hr>
+    <h1> Suzuki Boulevard c50 </h1>
+    <div class="opis">
+           <h3 class="zdescr"> Описание товара</h3>
+        <img class="product_img" src="./../../../static/mainapp/img/products/c50.JPG" width="500" alt="c50" onclick="openImageWindow(this.src);">
+
+    <p class="cratop"> Модель круизера Suzuki VL800 Intruder (Volusia) появилась в 2001 году в качестве классической модификации Suzuki VS800 Intruder, выпускаясь параллельно с ней до 2004 года (на американском рынке параллельно с Boulevard S50, до 2009 года). Модель была доступна также на японском рынке под названием Suzuki Intruder 800 Classic, продаваясь там до 2006 года включительно. <br>
+
+        С 2005 года VL800 Volusia получает рестайлинг и меняет свое название на Suzuki Boulevard C50 (для американского рынка) и Suzuki Intruder C800 (для рынков Европы и других стран). Основные изменения коснулись внешнего вида (новый дизайн крышки воздушного фильтра, заднего фонаря, передней фары и пр.) и технической части: новая модель получает инжектор и снижает емкость топливного бака до 15,5 л (вместо 17,0 л).<br>
+
+        С 2006 года появляются две новые модификации - Suzuki Boulevard C50C (Intruder C800C) и Suzuki Boulevard C50T. Первая версия отличается литыми бескамерными колесными дисками, а вторая - туринговым обвесом (лобовое стекло, кофры, спинка, клепаное седло) и шинами с белым бортом.<br>
+
+        В 2009 году модель Suzuki Intruder C800 (Boulevard C50) получает инжектор с двойными дроссельными заслонками SDTV, а в 2016 - последний год производится для Европы. В настоящее время модель доступна только на американском рынке в двух модификациях - Suzuki Boulevard C50 (спицованные колеса) и Suzuki Boulevard C50T.<br>
+
+        На общей базе Suzuki Intruder 800 Volusia и Suzuki Intruder C800 (Boulevard C50) была также создана версия Suzuki Boulevard M50 (Intruder M800), ставшая преемником Suzuki VZ800 Desperado (Marauder).<br>
+
+        На внутреннем японском рынке предлагалась также 400-кубовая модификация моделей Suzuki VL800 Volusia и Suzuki Intruder C50 - Suzuki VL400 Intruder Classic, которая в 2016 году была снята с производственной линейки.</p>
+    </div>
+
+
+    <h3> Характеристи мотоцикла </h3>
+    <table class="list">
+        <tr>
+            <td><b>Модель - </b></td>
+            <td>Suzuki Intruder C800 / Boulevard C50</td>
+        </tr>
+        <tr>
+            <td><b>Тип мотоцикла - </b></td>
+            <td>круизер</td>
+        </tr>
+        <tr>
+            <td><b>Год выпуска - </b></td>
+            <td>2001+</td>
+        </tr>
+        <tr>
+            <td><b>Тип двигателя - </b></td>
+            <td>2-цилиндровый, 4-тактный, V-образный</td>
+        </tr>
+        <tr>
+            <td><b>Рабочий объем - </b></td>
+            <td>805 куб. см.</td>
+        </tr>
+        <tr>
+            <td><b>Диаметр цилиндра/ход поршня - </b></td>
+            <td>83,0 x 74,4 мм</td>
+        </tr>
+        <tr>
+            <td><b>Степень сжатия - </b></td>
+            <td>9,4:1</td>
+        </tr>
+        <tr>
+            <td><b>Максимальная мощность - </b></td>
+            <td>51,7 л.с. (38,0 кВт) при 6000 об/мин</td>
+        </tr>
+        <tr>
+            <td><b>Максимальный крутящий момент - </b></td>
+            <td>69 Нм (6,9 кг*м) при 3500 об/мин</td>
+        </tr>
+        <tr>
+            <td><b>Коробка передач - </b></td>
+            <td>5-ступенчатая</td>
+        </tr>
+        <tr>
+            <td><b>Тип привода - </b></td>
+            <td>кардан</td>
+        </tr>
+
+    </table>
+    <table class="list">
+        <tr>
+            <td>Для</td>
+            <td>соответствия</td>
+            <td>заданию</td>
+            <td>№9 и 10</td>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="3">5</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+    </table>
+    <h3> Комментарий продавца (тот пункт, что в задании "Подробное описание товара")</h3>
+    <p class="podrop"> Стоит на учете. Пробег на данный момент 18 200 миль (29 120 км) и растёт пока идет сезон. Находится в Москве. Я второй его владелец в России. Покупал его в начале прошлого сезона и меня он не подвёл ни разу.<br>
+        Два оригинальных ключа SUZUKI + запасной в комплекте.<br>
+        На мотоцикл установлено:<br>
+        - резина METZELER ME888 MARATHON ULTRA (этот сезон, да и следующий, думаю, проедет). <br>
+        - дополнительный свет (люстра) Cobra <br>
+        - дуги безопасности Cobra <br>
+        - блок переключателей на руле Big Bike Parts <br>
+        - датчик включённой передачи HealTech GIPRO <br>
+        - зарядка USB <br>
+        - ручки руля AVON AIR Gatling <br>
+        - спинка водителя <br>
+        - багажник <br>
+        - защитный бугель на переднее крыло Big Bike Parts <br>
+        - защитные накладки на нижнюю часть переднего и заднего крыла <br>
+        - накладка на передний суппорт <br>
+        - накладки на перья вилки <br>
+        - декоративная накладка на переднее крыло – «коготь» Kuryakyn <br>
+        - накладки «пламя» на водительские платформы Kuryakyn <br>
+        - накладки на рычаги переключения передач и педаль заднего тормоза - Kuryakyn <br>
+        - Хромированные накладки на: решётку радиатора, рулевую колонку, крышки двигателя, раму, задний фонарь, тормозной бачок - Show Chrome и Suzuki Boulevard <br>
+        - крышка воздушного фильтра в стиле – Live to Ride.</p>
+{% endblock %}
+

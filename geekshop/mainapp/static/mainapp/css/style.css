@@ -1,0 +1,134 @@
+body {
+    color: black;
+    background: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: ghostwhite;
+    background-color: url('../img/bg.jpg');
+    font-size: 20px;
+    height: 50px;
+
+}
+
+.list {
+    list-style-type: square;
+    color: brown;
+    font-style: oblique
+}
+
+.cratop {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.podrop {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+    text-align: left;
+}
+
+.menu li a:hover {
+    color: darkcyan;
+
+}
+li {
+    list-style-type: none;
+}
+.menu li {
+    display: inline;
+    top: 40px;
+    right: 40px;
+}
+.menu p {
+    position: relative;
+    top: 40px;
+    right: 40px;
+}
+.menu {
+    text-align: right;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.logo {
+/*    text-align: center;*/
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 500;
+    height: 500;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    
+        
+}
+
+.email:focus {
+    color: red;
+    background-color: black;
+}
+
+.product_img {
+    outline: 3px solid;
+    outline-color: black;
+    float: left;
+}
+
+.product_img:hover {
+    outline: 0px solid;
+    outline-color: transparent;
+}
+
+.list td {
+    border: 1px solid;
+    border-color: black;
+}
+
+.list {
+    border: 1px solid;
+/*    float: left;*/
+    
+}
+
+.list tr:first-child {
+    height: 40px;
+    width: 100px;
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+        
+}
+.header {
+    height: 300px;
+    background: url('../img/bg.jpg');
+/*    background-color: bisque;*/
+/*    float: left;*/
+        
+}
+.footer {
+    height: 50px;
+    background-color: cornflowerblue;
+    text-align: right;
+    
+}
+.rights {
+    position: relative;
+    right: 20px;
+    top: 10px
+}
+/*
+.opis {
+    margin: 0 auto;
+}*/
