@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 import mainapp.views as mainapp
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls import include
 
 urlpatterns = [
     path('', mainapp.main),
@@ -26,6 +28,7 @@ urlpatterns = [
     path('contacts/', mainapp.contacts, name='contacts'),
     path('products/C50/', mainapp.mapet, name='C50'),
     path('products/', mainapp.products, name='products'),
+    path('auth/', include('authapp.urls', namespace='auth')),
 
     path('admin/', admin.site.urls),
 

@@ -60,7 +60,22 @@ li {
     top: 10px;
     right: 10px;
 }
-
+.ERL {
+    text-align: right;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+.ERL li {
+    display: inline;
+    top: 40px;
+    right: 40px;
+}
+.ERL p {
+    position: relative;
+    top: 40px;
+    right: 40px;
+}
 .logo {
 /*    text-align: center;*/
     margin-top: 40px;

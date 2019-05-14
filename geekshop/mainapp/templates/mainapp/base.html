@@ -32,6 +32,15 @@
                     <li><a href="{% url 'catalog' %}">Каталог</a></a></li>
                     <li><a href="{% url 'contacts' %}">Контакты</a></li>
                     <li><a href="{% url 'products' %}">Продукты</a></li>
+                    <h3>Пользователь: {{ request.user.username|title }}</h3>
+                    <hr>
+                    {% if request.user.is_anonymous %}
+                        <li> <a href = {% url 'auth:login' %}>Вход</a></li>
+                        <li> <a href = {% url 'auth:register' %}>Зарегистрироваться</a></li>
+                    {% endif %}
+                    {% if request.user.is_authenticated %}
+                        <li> <a href = {% url 'auth:logout' %}>Выйти</a></li>
+                    {% endif %}
                     </p>
 
                 </ul>
